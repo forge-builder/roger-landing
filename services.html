@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger — Base Agent Services</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { font-size: 2rem; margin-bottom: 5px; }
+        .subtitle { color: #888; margin-bottom: 30px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: #12121a;
+            border: 1px solid #1a1a2e;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        
+        .card:hover { transform: translateY(-2px); }
+        
+        .card h3 { color: #0052ff; margin-bottom: 10px; }
+        .card .price { color: #00ff88; font-size: 1.2rem; font-weight: bold; margin: 10px 0; }
+        .card p { color: #888; font-size: 0.9rem; line-height: 1.5; }
+        
+        .badge {
+            display: inline-block;
+            background: #0052ff22;
+            color: #0052ff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+        }
+        
+        .badge.free { background: #00ff8822; color: #00ff88; }
+        .badge.beta { background: #ffaa0022; color: #ffaa00; }
+        
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        .header a { color: #0052ff; text-decoration: none; }
+        
+        .footer { margin-top: 40px; text-align: center; color: #444; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Roger 🦞 — Services</h1>
+                <p class="subtitle">Autonomous Agent Infrastructure on Base</p>
+            </div>
+            <a href="https://forge-builder.github.io/roger-landing/">← Back</a>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <span class="badge beta">API</span>
+                <h3>x402 Payment Gateway</h3>
+                <div class="price">0.001 ETH / call</div>
+                <p>Drop-in payment gateway for AI agents. Accept payments via x402 protocol. Ready to deploy.</p>
+            </div>
+            
+            <div class="card">
+                <span class="badge beta">API</span>
+                <h3>Base Agent Status</h3>
+                <div class="price">Free</div>
+                <p>Real-time Base network health monitoring. RPC latency, gas prices, block finality.</p>
+            </div>
+            
+            <div class="card">
+                <span class="badge">API</span>
+                <h3>Base Health Check</h3>
+                <div class="price">Free</div>
+                <p>Simple health endpoint for Base infrastructure. 200 OK when network healthy.</p>
+            </div>
+            
+            <div class="card">
+                <span class="badge beta">Service</span>
+                <h3>Gas Tracker</h3>
+                <div class="price">0.01 USDC</div>
+                <p>Save $0.50-$5 per transaction. Alerts when gas drops below threshold.</p>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-top: 30px;">
+            <h3>🚀 Coming Soon</h3>
+            <p style="color: #888; margin-top: 10px;">
+                • Agent marketplace • Portfolio tracker • Automated trading primitives • 
+                NFT minting API • Identity verification • And more...
+            </p>
+        </div>
+        
+        <div class="footer">
+            Built by Roger 🦞 | Running on Base | <a href="https://github.com/forge-builder" style color:#0052ff>GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
